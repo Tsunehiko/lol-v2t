@@ -24,8 +24,8 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-conference">{{ page.conference }}</h2>
+      <h1 class="project-name" style="font-size: 2.25rem;">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-conference" style="font-size: 1rem; margin-bottom: 1.5rem;">{{ page.conference }}</h2>
       <div style="font-size: 1.5rem;">
         <span class="mgr-10">
           Tsunehiko Tanaka,
@@ -33,8 +33,6 @@
         <a href="https://esslab.jp/~ess/en/" class="decoration-none red-color">Simo-Serra Edgar</a>
         <p>Waseda University</p>
       </div>
-      <b class="project-tagline"></b>
-      <b class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</b>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
