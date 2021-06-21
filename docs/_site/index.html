@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+
+    
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>LoL-V2T: Large-Scale Esports Video Description Dataset</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="LoL-V2T: Large-Scale Esports Video Description Dataset" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="LoL-V2T: Large-Scale Esports Video Description Dataset" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/","headline":"LoL-V2T: Large-Scale Esports Video Description Dataset","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=">
+  </head>
+  <body>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">LoL-V2T: Large-Scale Esports Video Description Dataset</h1>
+      <h2 class="project-conference">2021 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshop</h2>
+      <div style="font-size: 1.5rem;">
+        <span class="mgr-10">
+          Tsunehiko Tanaka,
+        </span>
+        <a href="https://esslab.jp/~ess/en/" class="decoration-none red-color">Simo-Serra Edgar</a>
+        <p>Waseda University</p>
+      </div>
+      <b class="project-tagline"></b>
+      
+      
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <p><img src="src/images/teaser.png" alt="TEASER" /></p>
+
+<p>LoL-V2T is a new large-scale dataset for video description in esports.</p>
+
+<h1 id="abstract">Abstract</h1>
+<p>Esports is a fastest-growing new field with a largely online-presence, and is creating a demand for automatic domain-specific captioning tools. However, at the current time, there are few approaches that tackle the esports video description problem. In this work, we propose a large-scale dataset for esports video description, focusing on the popular game “League of Legends”. The dataset, which we call LoL-V2T, is the largest video description dataset in the video game domain, and includes 9,723 clips with 62,677 captions. This new dataset presents multiple new video captioning challenges such as large amounts of domain-specific vocabulary, subtle motions with large importance, and a temporal gap between most captions and the events that occurred. In order to tackle the issue of vocabulary, we propose a masking the domain-specific words and provide additional annotations for this. In our results, we show that the dataset poses a challenge to existing video captioning approaches, and the masking can significantly improve performance. Our dataset and code is publicly available.</p>
+
+<h2 id="overall-introduction">Overall Introduction</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Lc8XV7_mUlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h1 id="statistics">Statistics</h1>
+
+<p>It consists of 9.7k clips of <em>League of Legends</em> playing video taken from YouTube and 63k cap-tions. Each video is associated with multiple captions based on manual or ASR-generated subtitles.
+We collect footages of 157 matches of the <em>League of Legends</em> world championships “Worlds” from YouTube.</p>
+
+<p>LoL-V2T has 3 different challenges for training captioning models.</p>
+<ul>
+  <li>The captions contain a significant amountof proper nouns specific to the esports title and numerals that describe the status of matches.</li>
+  <li>Some important objects in the clips are difficult for captioning models to recognize because their size and subtle motions.</li>
+  <li>Some pairs of a clip and captions are not necessarily aligned temporally, i.e., there can be significant lag between game actions and captions.</li>
+</ul>
+
+<p><img src="src/images/pos_frequency.png" alt="LoL-V2T PART OF SPEECH" /></p>
+
+<h1 id="downloads">Downloads</h1>
+<p><a href="https://esslab.jp/~tanaka/dataset/lol-v2t/annotations/annotations.tar.gz">Annotations</a> | <a href="https://esslab.jp/~tanaka/dataset/lol-v2t/train/train.tar.gz">Train(10.6GB)</a> | <a href="https://esslab.jp/~tanaka/dataset/lol-v2t/test/test.tar.gz">Test(3.1GB)</a> | <a href="https://esslab.jp/~tanaka/dataset/lol-v2t/val/valid.tar.gz">Val(1.3GB)</a></p>
+
+<h1 id="paper">Paper</h1>
+<p><a href="https://esslab.jp/publications/TanakaCVPRW2021.pdf">Download</a></p>
+
+<h2 id="bibtex">Bibtex</h2>
+
+<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@InProceedings</span><span class="p">{</span><span class="nl">Tanaka_2021_CVPR</span><span class="p">,</span>
+    <span class="na">author</span>    <span class="p">=</span> <span class="s">{Tanaka, Tsunehiko and Simo-Serra, Edgar}</span><span class="p">,</span>
+    <span class="na">title</span>     <span class="p">=</span> <span class="s">{LoL-V2T: Large-Scale Esports Video Description Dataset}</span><span class="p">,</span>
+    <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops}</span><span class="p">,</span>
+    <span class="na">month</span>     <span class="p">=</span> <span class="s">{June}</span><span class="p">,</span>
+    <span class="na">year</span>      <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+    <span class="na">pages</span>     <span class="p">=</span> <span class="s">{4557-4566}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+      <footer class="site-footer">
+        
+      </footer>
+    </main>
+  </body>
+</html>
