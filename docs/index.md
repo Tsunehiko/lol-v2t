@@ -28,6 +28,8 @@ LoL-V2T has 3 different challenges for training captioning models.
 ![LoL-V2T PART OF SPEECH](src/images/pos_frequency.png)
 
 # Downloads
+Note that the raw video data are not published on this page, according to the [policy](https://www.riotgames.com/en/legal) set by Riot Games. You can create the dataset including raw video data using [our tool](https://github.com/Tsunehiko/create-lol-v2t).
+
 [Annotations](https://esslab.jp/~tanaka/dataset/lol-v2t/annotations/annotations.tar.gz) | [Train(10.6GB)](https://esslab.jp/~tanaka/dataset/lol-v2t/train/train.tar.gz) | [Test(3.1GB)](https://esslab.jp/~tanaka/dataset/lol-v2t/test/test.tar.gz) | [Val(1.3GB)](https://esslab.jp/~tanaka/dataset/lol-v2t/val/valid.tar.gz)
 
 # Paper
